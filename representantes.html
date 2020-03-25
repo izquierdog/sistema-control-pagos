@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <title>Representantes</title>
+    <style>
+      #titulo_r1, #titulo_r2{
+        color: rgb(238, 232, 170);
+      }
+      .contenedor_ppal{
+        background: rgb(240, 255, 240);
+        border-style: solid;
+        border-width: 1px;
+        border-color: black;
+      }
+      a{
+        color:rgb(0,0,0);
+      }
+      .img_representantes{
+        width: 700px;
+        height: 500px;
+      }
+      .texto_introductorio{
+        background: rgb(240, 255, 240);
+        color:black;
+      }
+      .alert{
+        font-family: monospace;
+      }
+    </style>
+  </head>
+  <body>
+  <section>
+    <div class="container p-3   bg-dark text-white">
+      <h1 id="titulo_r1">EL MÓDULO DE REPRESENTANTES</h1>
+      <p id="titulo2_r2" class="titulo font-weight-bold">Gestión los datos del Representante</p>
+    </div>
+    <div class="contenedor_ppal container p-3    text-dark">
+       <div class="row">
+         <div class="col-12">
+           <p class="texto_introductorio font-weight-bold p-3 mb-2  text-justify w-100 float-left mr-4">El módulo de gestión de datos del Representante, le permite agregar la información que sustentará la 
+           factura.  De la misma manera, podrá de manera rápida vincular alumnos con su representante, incluir datos para facturar a nombre de una razón social, modificar el número de cédula entre otras cosas.
+           Tópicos a tratar:
+           <ul class="font-weight-bold pt-0">
+            <li><a href="#agregar">Agregar un nuevo representante</a></li>
+            <li><a href="#">Consultar el listado y seleccionar un representante</a></li>
+           </p>
+           <img class="img_representantes mx-auto d-block float-center" src="imagenes/representantes.png" alt="log DSI">
+           <div class="alert alert-secondary mt-2">
+              <strong>Atención!</strong> Los puntos verdes son datos de entrada obligatoria.
+           </div><!--fin div alert-->
+           <p id="agregar" class="texto_introductorio  p-3 mb-2  text-justify w-100 float-left mr-4 font-weight-normal"><strong>Agregar un nuevo Representante</strong> Debe disponer de los siguientes datos: número de cédula del representante legal, apellidos y nombres, dirección, razón social y rif (opcionales) y mínimo un número de teléfono.<br>
+           Una vez tenga esos datos a la mano, presione el botón: NUEVO.  Introduzca el número de cedula (sólo dígitos) y presione ACEPTAR.  Si el número de cédula es válido se activaran los cuadros de texto para ingresar los datos complementarios del representante.<br>
+           Si por el contrario el representante ya está registrado, el sistema se lo informará e inmediatamente le mostrará los datos registrados junto con los alumnos (si los tiene) registrados a su nombre.</p>
+         </div>
+    </div><!--fin div del container principal-->
+      
+    </section>
+
+
+    <!--fin bootstrapt-->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    
+    <script src="jquery/jquery-3.4.1.min.js"></script>
+    <script src="popper/popper.min.js"></script>
+    <script src="js/bootstrap.min.js" ></script>
+    
+  </body>
+</html>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    //alert("entro a representantes");
+    //$("#contenido").load("index.html");
+  });
+
+});
+</script>
